@@ -1,7 +1,7 @@
 ChronoTCO
 ====
 
-This is a rework of Reza Begheri's tail recursion approach, specifically his article [Python Stack Frames and Tail-Call Optimization] and his [Tail Recursion] code. This was not forked due to the significance of the changes: providing Python 3.8x support, eliminating while loops, cleaning up all variable names and flow, stripping out non-decorator functionality, and creating it as an installable pip module that could then be easily digested. 
+This is a rework of Reza Begheri's tail recursion approach, specifically his article Python Stack Frames and Tail-Call Optimization and his Tail Recursion code. This was not forked due to the significance of the changes: providing Python 3.8x support, eliminating while loops, cleaning up all variable names and flow, stripping out non-decorator functionality, and creating it as an installable pip module that could then be easily digested. 
 
 
 .. _Python Stack Frames and Tail-Call Optimization: https://towardsdatascience.com/python-stack-frames-and-tail-call-optimization-4d0ea55b0542. 

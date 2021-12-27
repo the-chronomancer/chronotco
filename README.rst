@@ -39,7 +39,7 @@ And decorate your tail-recursive function!
             
 Why?
 ----
-Sorry Guido_, something more important than arguing whether or not TCO and losing stack traces is Pythonic, is that I learned something I did not know before and used your language as a medium to do so!
+Sorry Guido_, something more important than arguing whether or not TCO and losing stack traces is Pythonic, is that I learned something I did not know before!
 
 .. _Guido: http://neopythonic.blogspot.com/2009/04/final-words-on-tail-calls.html
 

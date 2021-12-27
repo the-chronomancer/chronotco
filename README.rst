@@ -1,7 +1,11 @@
 ChronoTCO
 ====
 
-This is a rework of Reza Begheri's tail recursion approach, specifically his article [Python Stack Frames and Tail-Call Optimization](https://towardsdatascience.com/python-stack-frames-and-tail-call-optimization-4d0ea55b0542) and his [Tail Recursion code](https://github.com/reza-bagheri/tail-rec). This was not forked due to the significance of the changes: providing Python 3.8x support, eliminating while loops, cleaning up all variable names and flow, stripping out non-decorator functionality, and creating it as an installable pip module that could then be easily digested. 
+This is a rework of Reza Begheri's tail recursion approach, specifically his article [Python Stack Frames and Tail-Call Optimization] and his [Tail Recursion] code. This was not forked due to the significance of the changes: providing Python 3.8x support, eliminating while loops, cleaning up all variable names and flow, stripping out non-decorator functionality, and creating it as an installable pip module that could then be easily digested. 
+
+
+.. _Python Stack Frames and Tail-Call Optimization: https://towardsdatascience.com/python-stack-frames-and-tail-call-optimization-4d0ea55b0542. 
+.. _Tail Recursion: https://github.com/reza-bagheri/tail-rec)
 
 This is a proof of concept pip (**Python 3.x**) module that provides a decorator implementation of tail call optimization via bytecode manipulation, reducing the space complexity of recursion to **O(1)** (rather than **O(n)**) by manipulating the function structure itself.  
 
@@ -36,10 +40,6 @@ And decorate your tail-recursive function!
             
 Why?
 ----
-Recursion in Python creates a new stack frame every time it iterates through the loop. Though you can modify the recursion depth for your system, you will eventually exhaust all memory while retaining all previous iterations. This method of tail-call optimization determines if a function is tail-recursive, and if true, resets the function variables then jumps back to the beginning of the function, recycling the same stack frame.
-
-An example of calling the above tail_factorial method without tail-call optimization and an input of 25,000 (default recursion depth is 1,000) yields a "**RecursionError: maximum recursion depth exceeded in comparison**", with chronotco you will see a 99,094 digit number assuming you have enough memory to store the full stack frame.
-
 Sorry Guido_, something more important than arguing whether or not TCO and losing stack traces is Pythonic, is that I learned something I did not know before and used your language as a medium to do so!
 
 .. _Guido: http://neopythonic.blogspot.com/2009/04/final-words-on-tail-calls.html

@@ -1,11 +1,10 @@
 ChronoTCO
 ====
 
-This is a rework of Reza Begheri's tail recursion approach, specifically his article Python Stack Frames and Tail-Call Optimization and his Tail Recursion code. This was not forked due to the significance of the changes: providing Python 3.8x support, eliminating while loops, cleaning up all variable names and flow, stripping out non-decorator functionality, and creating it as an installable pip module that could then be easily digested. 
+This is a rework of Reza Begheri's tail recursion approach, specifically his article_ Python Stack Frames and Tail-Call Optimization and his Tail Recursion code_. This was not forked due to the significance of the changes: providing Python 3.8x support, eliminating while loops, cleaning up all variable names and flow, stripping out non-decorator functionality, and creating it as an installable pip module that could then be easily digested. 
 
-
-.. _Python Stack Frames and Tail-Call Optimization: https://towardsdatascience.com/python-stack-frames-and-tail-call-optimization-4d0ea55b0542. 
-.. _Tail Recursion: https://github.com/reza-bagheri/tail-rec)
+.. _article: https://towardsdatascience.com/python-stack-frames-and-tail-call-optimization-4d0ea55b0542. 
+.. _code: https://github.com/reza-bagheri/tail-rec)
 
 This is a proof of concept pip (**Python 3.x**) module that provides a decorator implementation of tail call optimization via bytecode manipulation, reducing the space complexity of recursion to **O(1)** (rather than **O(n)**) by manipulating the function structure itself.  
 

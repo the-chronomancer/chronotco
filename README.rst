@@ -1,7 +1,13 @@
-ChronoTCO
+Archive Notice
 ====
 
-This is a proof of concept pip (**Python 3.x**) module that provides a decorator implementation of tail call optimization via bytecode manipulation, reducing the space complexity of recursion to **O(1)** (rather than **O(n)**) by manipulating the function structure itself.  
+**Please note:** As of 2023, this repository has been archived. While it remains available for reference and educational purposes, it is no longer actively maintained or updated. The information and code within this repository might not be compatible with current versions of Python or other evolving technologies. Users are advised to use this repository as a learning tool or base for their implementations, considering the potential need for adjustments and modernizations.
+
+
+ChronoTCO
+----
+
+This is a proof of concept pip (**Python <= 3.8**) module that provides a decorator implementation of tail call optimization via bytecode manipulation, reducing the space complexity of recursion to **O(1)** (rather than **O(n)**) by manipulating the function structure itself.  
 
 If a function is tail-call recursive and you want to ensure you won't blow the stack, use chronotco!
 
